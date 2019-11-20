@@ -15,10 +15,11 @@
           <input type="submit" class="ghost-button" value="Get Weather">
         </form>
         <% if(weather !== null){ %>
-            <p>Current Temp:<%= weather %></p>
+            <p>Current Conditions: <%= weather %></p>
             <p>Todays High: <%= high %></p>
-
-          <% } %>
+            <p>Todays Low: <%= low %></p>
+            <img src="http://openweathermap.org/img/w/<%= icon %>.png" alt="Image">
+            <% } %>
           <% if(error !== null){ %>
             <p><%= error %></p>
           <% } %>
