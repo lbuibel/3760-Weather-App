@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const app = express()
 
-// let apiKey = 'a9da6dd423feb80b529614e938d9224a'
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -44,8 +43,7 @@ app.post('/', function (req, res) {
 
 
 
-
 app.listen(3100, function () {
-  console.log('Example app listening on port 3100!')
+  console.log('listening on port 3100')
     }
 )
