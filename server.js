@@ -43,21 +43,15 @@ app.post('/', function (req, res) {
   });
 })
 
-var port = process.env.port || 5000
-
-app.listen(port, function () {
-  // console.log('listening on port 3100')
-    }
-)
-
-
-if (process.env.NODE_ENV === 'production') {
-  // Exprees will serve up production assets
-  app.use(express.static('client/build'));
-
-  // Express serve up index.html file if it doesn't recognize route
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.ejs'));
-  });
+var port = process.env.PORT
+if (port == null || port == ""){
+  port = 5000
 }
+// app.listen(PORT, function () {
+//   console.log('listening on port 3100')
+//     }
+// 
+
+app.listen(port)
+
+
