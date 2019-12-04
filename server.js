@@ -43,9 +43,9 @@ app.post('/', function (req, res) {
   });
 })
 
+var port = process.env.port || 5000
 
-
-app.listen(3100, function () {
+app.listen(port, function () {
   console.log('listening on port 3100')
     }
 )
