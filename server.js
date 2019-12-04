@@ -31,11 +31,13 @@ app.post('/', function (req, res) {
         let high = `${Math.round(weather.main.temp_max)}`
         let low = `${Math.round(weather.main.temp_min)}`
         let icon = weather.weather[0].icon
+        let description = ` with ${weather.weather[0].description}`
         res.render('index', {weather: weatherText,
-                            high: high, 
-                            low: low,
-                            icon: icon,
-                            error: null});
+          high: high, 
+          low: low,
+          icon: icon,
+          description: description,
+          error: null});
       }
     }
   });

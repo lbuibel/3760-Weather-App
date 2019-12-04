@@ -1,11 +1,14 @@
 body {
-    width: 800px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #303030;
   }
+p {
+  font-size: 1.25rem;
+}
+
   .container {
     width: 400px;
-    margin: 20vh auto;
+    margin: 10vh auto;
     background: rgb(91,88,165);
     background: linear-gradient(180deg, rgba(91,88,165,1) 30%, rgba(90,194,239,1) 100%);
     color: white;
@@ -18,72 +21,55 @@ body {
     display: block;
     margin: 0 auto;
   }
+
   fieldset {
     display: block;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-before: 0em;
-    -webkit-padding-start: 0em;
-    -webkit-padding-end: 0em;
-    -webkit-padding-after: 0em;
     border: 0px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    min-width: -webkit-min-content;
-    padding: 30px;
-  }
-  .ghost-input, p {
-    display: block;
-    font-weight:300;
-    width: 100%;
-    font-size: 25px;
-    border:0px;
-    outline: none;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: white;
-    /* background: #fff; */
-    background: transparent;
-    font-family: Open Sans,Verdana;
-    padding: 10px 15px;
-    margin: 10px 0px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  .ghost-input:focus {
-    border-bottom:1px solid #ddd;
-  }
-  .ghost-button {
-    background-color: transparent;
-    border:2px solid white;
-    padding:10px 30px;
-    width: 100%;
-    min-width: 350px;
-    border-radius: 10px;
-    color: white;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-    margin-bottom: 20px;
-  }
-  .ghost-button:hover {
-    color: rgba(91,88,165,1);
-    background-color: white;
-  }
-  p {
-    color: white;
+    padding: 1.75rem;
   }
 
-  ::placeholder {
-    color: white;
-  }
+
+  /*-----------------Input Styling---------------------*/
+.city-input {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  background-color: transparent;
+}
+
+.city-input:focus {
+  border-bottom:1px solid white;
+  background-color: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+  /*-----------------Button Styling---------------------*/
+
+.get-weather {
+  width: 100%;
+  background-color: transparent;
+  border:2px solid white;
+  padding:10px 30px;
+  width: 100%;
+  color: white;
+  border-radius: 15px;
+  transition: .25s;
+  font-size: .75rem;
+}
+
+.get-weather:hover {
+  color: rgba(91,88,165,1);
+  background-color: white;
+}
+p {
+  color: white;
+}
